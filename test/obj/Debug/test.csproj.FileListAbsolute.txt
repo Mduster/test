@@ -1,0 +1,7 @@
+B:\projects\test\test\bin\test.dll.config
+B:\projects\test\test\bin\test.dll
+B:\projects\test\test\bin\test.pdb
+B:\projects\test\test\bin\Newtonsoft.Json.dll
+B:\projects\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+B:\projects\test\test\obj\Debug\test.dll
+B:\projects\test\test\obj\Debug\test.pdb
