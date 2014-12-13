@@ -23,8 +23,7 @@ namespace test
             string number = Request.Params["Number"];
             string password = Request.Params["PassWord"];
 
-            #region
-            ///判断输入数据是否正确，并返回成功与否的信息。
+            #region 判断输入数据是否正确，并返回成功与否的信息。
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(number) || string.IsNullOrWhiteSpace(address))
             {
                 Response.Write(JsonConvert.SerializeObject(new Information { result = false, Info = "注册失败，请输入用户名等信息！" }));
@@ -32,7 +31,7 @@ namespace test
             else
             {
                 password = SQLHelper.Encrypt(password);
-                SQLHelper.ExecuteNonQuery("insert into T_Login (UserName,PassWord,Number,Address) values (@username,@password,@number,@address)"
+                SQLHelper.ExecuteNonQuery("insert into T_Registe (UserName,PassWord,Number,Address) values (@username,@password,@number,@address)"
                     , new SqlParameter("@username", username), new SqlParameter("@password", password), new SqlParameter("@number", number), new SqlParameter("@address", address));
                 Response.Write(JsonConvert.SerializeObject(new Information { result = true, Info = "注册成功" }));
             }

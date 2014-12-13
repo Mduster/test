@@ -63,10 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Registe.aspx" />
+    <Content Include="Registe_address.aspx" />
+    <Content Include="Registe_change.aspx" />
+    <Content Include="Registe_number.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Information.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registe.aspx.cs">
       <DependentUpon>Registe.aspx</DependentUpon>
@@ -74,6 +78,27 @@
     </Compile>
     <Compile Include="Registe.aspx.designer.cs">
       <DependentUpon>Registe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registe_address.aspx.cs">
+      <DependentUpon>Registe_address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registe_address.aspx.designer.cs">
+      <DependentUpon>Registe_address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registe_change.aspx.cs">
+      <DependentUpon>Registe_change.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registe_change.aspx.designer.cs">
+      <DependentUpon>Registe_change.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registe_number.aspx.cs">
+      <DependentUpon>Registe_number.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registe_number.aspx.designer.cs">
+      <DependentUpon>Registe_number.aspx</DependentUpon>
     </Compile>
     <Compile Include="SQLHelper.cs" />
   </ItemGroup>
